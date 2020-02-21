@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Casio Calculator</string>
+    <string name="share_app_prefix">ماشین حساب مهندسی کاسیو را همین حالا از این آدرس دریافت کن :</string>
+    <string name="casio_calculator">ماشین حساب کاسیو</string>
+</resources>

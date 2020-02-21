@@ -1,0 +1,2638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    tools:context=".View.Fragment.StartFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8.5"
+            android:background="@mipmap/calc_img"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.38"
+                android:orientation="horizontal"
+                android:weightSum="8">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.55"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="Casio"
+                        android:textColor="@color/black_but"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="fx-115ES PLUS"
+                        android:textColor="@color/black_but"
+                        android:textSize="10sp"
+                        android:textStyle="italic|bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="NATURAL - V.P.A.M"
+                        android:textColor="#3a8572"
+                        android:textSize="10sp"
+                        android:textStyle="italic|bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.4"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="4.8" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="TWO WAY POWER"
+                        android:textColor="@color/black_but"
+                        android:textSize="8.5sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.15"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="6" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="D"
+                        android:textColor="#2d3591"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.75">
+
+                </Space>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.6">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Math"
+                        android:textColor="#FF2D3591"
+                        android:textSize="8sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.6"
+                android:orientation="horizontal"
+                android:weightSum="8">
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.07" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5.8"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/f_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2.2"
+                        android:gravity="left"
+                        android:textAllCaps="true"
+                        android:textColor="#2d3591"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <io.github.kexanie.library.MathView
+                        android:id="@+id/s_line"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2.468"
+                        android:gravity="right"
+                        android:maxLines="1"
+                        android:textAllCaps="true"
+                        android:textColor="#2d3591"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6.3"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5.9" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="88"
+                    android:orientation="vertical"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="26"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="14"
+                            android:orientation="vertical"
+                            android:weightSum="100">
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:gravity="center"
+                                android:text="SHIFT"
+                                android:textColor="@color/yellow_but"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+                            <ImageButton
+                                android:id="@+id/but1"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="30"
+                                android:background="@mipmap/left" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="16" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:orientation="horizontal"
+                                android:weightSum="4">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2.5"
+                                    android:gravity="center"
+                                    android:text="SOLVE"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:gravity="right"
+                                    android:text="="
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but6"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="CALC"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="14"
+                            android:orientation="vertical"
+                            android:weightSum="100">
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="13" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:gravity="center"
+                                android:text="ALPHA"
+                                android:textColor="@color/orange_but"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+                            <ImageButton
+                                android:id="@+id/but2"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="30"
+                                android:background="@mipmap/left" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:orientation="horizontal"
+                                android:weightSum="4">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2.5"
+                                    android:gravity="center"
+                                    android:text="d/dx"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="0.8"
+                                    android:gravity="center"
+                                    android:text=":"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but7"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="∫"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="30.5"
+                            android:orientation="vertical"
+                            android:weightSum="100">
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="18" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="70"
+                                android:background="@mipmap/center"
+                                android:orientation="vertical"
+                                android:weightSum="100">
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="5" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="30"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <Space
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="35" />
+
+                                    <Button
+                                        android:id="@+id/c_top"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="30"
+                                        android:background="@mipmap/c_top" />
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="30"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <Space
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="5" />
+
+                                    <Button
+                                        android:id="@+id/c_left"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="25"
+                                        android:background="@mipmap/c_left"
+                                        android:gravity="center" />
+
+                                    <Button
+                                        android:id="@+id/replay"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="40"
+                                        android:background="@mipmap/replay"
+                                        android:gravity="center" />
+
+                                    <Button
+                                        android:id="@+id/c_right"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="25"
+                                        android:background="@mipmap/c_right"
+                                        android:gravity="left" />
+
+                                </LinearLayout>
+
+                                <Space
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="3" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="30"
+                                    android:orientation="horizontal"
+                                    android:weightSum="100">
+
+                                    <Space
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="36" />
+
+                                    <ImageButton
+                                        android:id="@+id/c_buttom"
+                                        android:layout_width="0dp"
+                                        android:layout_height="match_parent"
+                                        android:layout_weight="30"
+                                        android:background="@mipmap/c_buttom" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="5" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="14"
+                            android:orientation="vertical"
+                            android:weightSum="100">
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="13" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:orientation="horizontal"
+                                android:weightSum="2">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:text="MODE"
+                                    android:textColor="@color/black_but"
+                                    android:textSize="7.5sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="left"
+                                    android:text="SETUP"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="7.5sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+                            <ImageButton
+                                android:id="@+id/but4"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="30"
+                                android:background="@mipmap/right" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:gravity="center"
+                                android:text="X!"
+                                android:textColor="@color/yellow_but"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/but8"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="^-1"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1.5" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="14"
+                            android:orientation="vertical"
+                            android:weightSum="100">
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:gravity="center"
+                                android:text="ON"
+                                android:textColor="@color/black_but"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+                            <ImageButton
+                                android:id="@+id/but5"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="30"
+                                android:background="@mipmap/right" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="16" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:orientation="horizontal"
+                                android:weightSum="4">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="Σ"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="S"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but9"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="log▪▍"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="25"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.5" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="14"
+                            android:orientation="vertical"
+                            android:weightSum="103.5">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="S"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="S"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but10"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="□/□"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:weightSum="12">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="right
+"
+                                    android:text="["
+                                    android:textColor="@color/purple_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="∠"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="left"
+                                    android:text="]"
+                                    android:textColor="@color/purple_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="right"
+                                    android:text="["
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="A"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="left"
+                                    android:text="]"
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but16"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="(-)"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:gravity="center"
+                                android:text="STO"
+                                android:textColor="@color/yellow_but"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/but22"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="RSL"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="14"
+                            android:orientation="vertical"
+                            android:weightSum="103.5">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="S"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="S"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but11"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="√"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:weightSum="12">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    android:gravity="center"
+                                    android:text="FACT"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="right"
+                                    android:text="["
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="B"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="left"
+                                    android:text="]"
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but17"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="°’’’"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:weightSum="4">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="←"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="i"
+                                    android:textColor="@color/purple_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold|italic" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but23"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="ENG"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"></Space>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="14"
+                            android:orientation="vertical"
+                            android:weightSum="103.5">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="x³"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="DEC"
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but12"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="x²"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:weightSum="12">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    android:gravity="center"
+                                    android:text="Abs"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="right"
+                                    android:text="["
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="C"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="left"
+                                    android:text="]"
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but18"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="hyp"
+                                android:textAllCaps="false"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:gravity="center"
+                                android:text="%"
+                                android:textColor="@color/yellow_but"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/but24"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="("
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"></Space>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="14"
+                            android:orientation="vertical"
+                            android:weightSum="103.5">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="S"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="HEX"
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but13"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="xº"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:weightSum="12">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    android:gravity="center"
+                                    android:text="sin-1"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="right"
+                                    android:text="["
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="D"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="left"
+                                    android:text="]"
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but19"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="sin"
+                                android:textAllCaps="false"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:weightSum="4">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="’"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="X"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but25"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text=")"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2"></Space>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="14"
+                            android:orientation="vertical"
+                            android:weightSum="103.5">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="10º"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="BIN"
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but14"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="log"
+                                android:textAllCaps="false"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:weightSum="12">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    android:gravity="center"
+                                    android:text="cos-1"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="right"
+                                    android:text="["
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="E"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="left"
+                                    android:text="]"
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but20"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="cos"
+                                android:textAllCaps="false"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:weightSum="4">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="S"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="Y"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but26"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="S⇔D"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="14"
+                            android:orientation="vertical"
+                            android:weightSum="103.5">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="eº"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="OCT"
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but15"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="In"
+                                android:textAllCaps="false"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:weightSum="12">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    android:gravity="center"
+                                    android:text="tan-1"
+                                    android:textAllCaps="false"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="right"
+                                    android:text="["
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="F"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="left"
+                                    android:text="]"
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but21"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="tan"
+                                android:textAllCaps="false"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="3" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="10"
+                                android:weightSum="4">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="M-"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="center"
+                                    android:text="M"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but27"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="22"
+                                android:background="@drawable/o_but1"
+                                android:text="M+"
+                                android:textColor="#ffffff"
+                                android:textSize="10sp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="48.75"
+                        android:orientation="horizontal"
+                        android:weightSum="100">
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3.5" />
+
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="16"
+                            android:orientation="vertical"
+                            android:weightSum="100">
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:gravity="center"
+                                android:text="CONST"
+                                android:textColor="@color/yellow_but"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/but28"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="7"
+                                android:textColor="@color/black_but"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right|bottom"
+                                    android:text="["
+                                    android:textColor="@color/black_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="7"
+                                    android:gravity="center"
+                                    android:text="MATRIX"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.5"
+                                    android:gravity="bottom|left"
+                                    android:text="]"
+                                    android:textColor="@color/black_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but33"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="4"
+                                android:textColor="@color/black_but"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="right|bottom"
+                                    android:text="["
+                                    android:textColor="@color/black_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="8"
+                                    android:gravity="center"
+                                    android:text="STAT/DIST"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="7sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1"
+                                    android:gravity="bottom|left"
+                                    android:text="]"
+                                    android:textColor="@color/black_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but38"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="1"
+                                android:textColor="@color/black_but"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:gravity="center"
+                                android:text="Rnd"
+                                android:textAllCaps="false"
+                                android:textColor="@color/yellow_but"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/but43"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="0"
+                                android:textColor="@color/black_but"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="16"
+                            android:orientation="vertical"
+                            android:weightSum="100">
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:gravity="center"
+                                android:text="CONV"
+                                android:textColor="@color/yellow_but"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/but29"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="8"
+                                android:textColor="@color/black_but"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.5"
+                                    android:gravity="right|bottom"
+                                    android:text="["
+                                    android:textColor="@color/black_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="7"
+                                    android:gravity="center"
+                                    android:text="VECTOR"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="1.5"
+                                    android:gravity="bottom|left"
+                                    android:text="]"
+                                    android:textColor="@color/black_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but34"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="5"
+                                android:textColor="@color/black_but"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="right|bottom"
+                                    android:text="["
+                                    android:textColor="@color/purple_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    android:gravity="center"
+                                    android:text="CMPLX"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="bottom|left"
+                                    android:text="]"
+                                    android:textColor="@color/purple_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but39"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="2"
+                                android:textColor="@color/black_but"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="Ran#"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4.8"
+                                    android:gravity="center"
+                                    android:text="RanInt"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but44"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="."
+                                android:textColor="@color/black_but"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="16"
+                            android:orientation="vertical"
+                            android:weightSum="100">
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:gravity="center"
+                                android:text="CLR"
+                                android:textColor="@color/yellow_but"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/but30"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="9"
+                                android:textColor="@color/black_but"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="right|bottom"
+                                    android:text="["
+                                    android:textColor="@color/black_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    android:gravity="center"
+                                    android:text="VERIFY"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="bottom|left"
+                                    android:text="]"
+                                    android:textColor="@color/black_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but35"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="6"
+                                android:textColor="@color/black_but"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="3"
+                                    android:gravity="right|bottom"
+                                    android:text="["
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:gravity="center"
+                                    android:text="BASE"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="7sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="2"
+                                    android:gravity="bottom|left"
+                                    android:text="]"
+                                    android:textColor="@color/blue_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but40"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="3"
+                                android:textColor="@color/black_but"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="П"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="e"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="9sp"
+                                    android:textStyle="bold|italic" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but45"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="×10º"
+                                android:textColor="@color/black_but"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="16"
+                            android:orientation="vertical"
+                            android:weightSum="100">
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:gravity="center"
+                                android:text="INST"
+                                android:textColor="@color/yellow_but"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/but31"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but3"
+                                android:gravity="center"
+                                android:text="DEL"
+                                android:textColor="@color/black_but"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="nPr"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4.8"
+                                    android:gravity="center"
+                                    android:text="GCD"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but36"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="×"
+                                android:textColor="@color/black_but"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="Pol"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4.8"
+                                    android:gravity="center"
+                                    android:text="Int"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but41"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="+"
+                                android:textColor="@color/black_but"
+                                android:textSize="22sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4"
+                                    android:gravity="center"
+                                    android:text="S"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="6"
+                                    android:gravity="center"
+                                    android:text="PreAns"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but46"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="Ans"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black_but"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="3" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="16"
+                            android:orientation="vertical"
+                            android:weightSum="100">
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:gravity="center"
+                                android:text="OFF"
+                                android:textColor="@color/yellow_but"
+                                android:textSize="8sp"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/but32"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but3"
+                                android:gravity="center"
+                                android:text="AC"
+                                android:textColor="@color/black_but"
+                                android:textSize="15sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="nCr"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4.8"
+                                    android:gravity="center"
+                                    android:text="LCM"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but37"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="÷"
+                                android:textColor="@color/black_but"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="6"
+                                android:weightSum="10">
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="5"
+                                    android:gravity="center"
+                                    android:text="Rec"
+                                    android:textColor="@color/yellow_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:layout_width="0dp"
+                                    android:layout_height="match_parent"
+                                    android:layout_weight="4.8"
+                                    android:gravity="center"
+                                    android:text="Intg"
+                                    android:textColor="@color/orange_but"
+                                    android:textSize="8sp"
+                                    android:textStyle="bold" />
+
+                            </LinearLayout>
+
+                            <Button
+                                android:id="@+id/but42"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="-"
+                                android:textColor="@color/black_but"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="7" />
+
+
+                            <Button
+                                android:id="@+id/but47"
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="17"
+                                android:background="@drawable/o_but2"
+                                android:gravity="center"
+                                android:text="="
+                                android:textColor="@color/black_but"
+                                android:textSize="18sp"
+                                android:textStyle="bold" />
+
+                            <Space
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="1" />
+
+                        </LinearLayout>
+
+                        <Space
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="2" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5">
+
+                </Space>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.75" />
+
+    </LinearLayout>
+
+</FrameLayout>

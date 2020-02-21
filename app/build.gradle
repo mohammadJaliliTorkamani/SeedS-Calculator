@@ -1,0 +1,57 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.seeds.seeds_calculator"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        buildConfigField "String", "TAPSELL_KEY", "\"pqnicbsfoekohcboajgiigrpjslnckqgjhqrofhnpfkrggqoeinbmdpnmhkieookranema\""
+        buildConfigField "String", "TAPSELL_MAIN_BANNER", "\"5e4ef2bd7e2d1e000164262e\""
+        buildConfigField "String", "TAPSELL_DRAWER_BANNER", "\"5e4fb893c567a0000160f55a\""
+        buildConfigField "String", "FLURRY_KEY", "\"XM8N3TD7KHSX66J4FZ7Y\""
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.pushpole.android:pushsdk:1.7.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+    implementation 'io.github.kexanie.library:MathView:0.0.6'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.6.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.squareup.okio:okio:2.2.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.14.1'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+    implementation 'ir.tapsell.sdk:tapsell-sdk-android:4.5.0'
+    implementation 'ir.tapsell.plus:tapsell-plus-sdk-android:1.1.1'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation 'com.flurry.android:analytics:12.2.0@aar'
+}

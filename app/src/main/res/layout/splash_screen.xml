@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/splash_icon"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/calc"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.414" />
+
+
+    <com.seeds.seeds_calculator.Utils.TextViewPlus
+        android:id="@+id/splash_casio_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="کاسیو"
+        android:textColor="#8b41c2"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:customFont="syekan.otf"
+        app:layout_constraintLeft_toLeftOf="@id/splash_icon"
+        app:layout_constraintRight_toLeftOf="@id/splash_calculator_txt"
+        app:layout_constraintTop_toBottomOf="@id/splash_icon" />
+
+    <com.seeds.seeds_calculator.Utils.TextViewPlus
+        android:id="@+id/splash_calculator_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="ماشین حساب"
+        android:textColor="#239a25"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:customFont="syekan.otf"
+        app:layout_constraintLeft_toRightOf="@id/splash_casio_txt"
+        app:layout_constraintRight_toRightOf="@id/splash_icon"
+        app:layout_constraintTop_toBottomOf="@id/splash_icon" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layoutDirection="ltr"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/splash_logo"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@mipmap/logo_g"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.seeds.seeds_calculator.Utils.TextViewPlus
+            android:id="@+id/splash_designed_by"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:gravity="center_vertical"
+            android:text="طراحی شده توسط"
+            android:textColor="#858585"
+            android:textSize="15sp"
+            app:customFont="syekan.otf"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/splash_logo"
+            app:layout_constraintTop_toTopOf="@id/splash_logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="6dp"
+            android:gravity="center_vertical"
+            android:text="SeedS"
+            android:textColor="#5fa017"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@id/splash_logo"
+            app:layout_constraintRight_toLeftOf="@+id/splash_designed_by"
+            app:layout_constraintTop_toTopOf="@id/splash_logo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

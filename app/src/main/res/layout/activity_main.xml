@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="rtl"
+    tools:context=".View.Activity.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorAccent"
+        android:orientation="vertical"
+        android:weightSum="100">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="4">
+
+            <ImageView
+                android:id="@+id/main_expand"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/ic_menu_bar" />
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <ir.tapsell.sdk.bannerads.TapsellBannerView
+            android:id="@+id/main_banner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="4"
+            app:tapsell_banner_type="banner_320x50" />
+
+        <fragment
+            android:id="@+id/main_surface"
+            class="com.seeds.seeds_calculator.View.Fragment.BlankFragment"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="94"
+            tools:layout="@layout/fragment_blank" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/navigation_drawer"
+        android:layout_width="290dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start" />
+</androidx.drawerlayout.widget.DrawerLayout>

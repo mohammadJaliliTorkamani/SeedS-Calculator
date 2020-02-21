@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">@color/colorAccent</color>
+    <color name="colorPrimaryDark">@color/colorAccent</color>
+    <color name="colorAccent">#0D2C09</color>
+    <color name="navigationBarColor">@color/colorAccent</color>
+    <color name="yellow_but">#a19359</color>
+    <color name="orange_but">#d46446</color>
+    <color name="blue_but">#3a8572</color>
+    <color name="black_but">#444448</color>
+    <color name="purple_but">@color/colorAccent</color>
+</resources>
