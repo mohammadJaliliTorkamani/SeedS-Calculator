@@ -1,2 +1,2 @@
 # SeedS_Calculator
-SeedS -  Calculator Open-Source Project
+SeedS -  Scientific Calculator Open-Source Project
